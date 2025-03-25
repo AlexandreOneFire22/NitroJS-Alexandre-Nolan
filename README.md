@@ -72,6 +72,3 @@ Ce projet est sous licence libre. Vous pouvez le modifier et l’utiliser comme 
 ---
 
 💡 *Projet développé par [AlexandreOneFire22](https://github.com/AlexandreOneFire22) et [AlexandreOneFire22](https://github.com/AlexandreOneFire22) 🔥
-```
-
-Ce fichier `README.md` est bien formaté en Markdown et contient toutes les informations essentielles pour utiliser l’API. 🎯 🚀
