@@ -1,0 +1,12 @@
+POST http://localhost:3000/api/films/add
+Content-Type: application/json
+
+{
+  "titre": "titre3",
+  "realisateur": "realisateur1",
+  "duree": "09:31:33",
+  "date_sortie": "2025-03-26",
+  "affiche": "https://fr.web.img6.acsta.net/medias/nmedia/18/84/77/28/20096200.jpg",
+  "genre_id": "1",
+  "description": "description1"
+}
