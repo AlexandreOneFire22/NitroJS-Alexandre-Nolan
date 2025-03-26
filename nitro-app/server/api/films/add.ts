@@ -15,12 +15,10 @@ export default defineEventHandler(async (event) => {
 
         try {
 
-            const films = await db.sql`INSERT INTO films (\`titre\`, \`realisateur\`, \`duree\`,
-                                                          \`date_sortie\`, \`affiche\`, \`genre_id\`, \`description\`)VALUES (${body.titre}, ${body.realisateur}, ${body.duree}, ${body.date_sortie}, ${body.affiche}, ${body.genre_id}, ${body.description}) `;
+            const films = await db.sql`INSERT INTO films VALUES (NULL,${body.titre}, ${body.realisateur}, ${body.duree}, ${body.date_sortie}, ${body.affiche}, ${body.genre_id}, ${body.description})`;
 
             return {
                 status: 'success',
-                data: films.rows[0]
             }
 
         } catch (error) {

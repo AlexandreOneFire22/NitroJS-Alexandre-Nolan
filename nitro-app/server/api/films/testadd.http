@@ -2,7 +2,7 @@ POST http://localhost:3000/api/films/add
 Content-Type: application/json
 
 {
-  "titre": "titre3",
+  "titre": "titre666",
   "realisateur": "realisateur1",
   "duree": "09:31:33",
   "date_sortie": "2025-03-26",
