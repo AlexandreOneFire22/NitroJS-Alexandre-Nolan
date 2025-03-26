@@ -3,7 +3,9 @@ export default defineEventHandler(async (event) => {
 
     const id = getRouterParam(event, 'id')
 
-    if (!id) {
+    const verif = await db.sql`
+            SELECT * FROM films where id =${id};`;
+    if (verif.rows.length === 0) {
         throw createError({
             statusCode: 400,
             statusMessage: 'ID manquant ou données invalides'

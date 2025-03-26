@@ -12,7 +12,7 @@ export default defineEventHandler(async (event) => {
     try {
         // Exécuter la requête SQL de récupération des séances
         const result = await db.sql`
-            SELECT * FROM seances where id =${id};`;
+            SELECT * FROM seances where film_id =${id};`;
 
         const resultfin = result["rows"]
 

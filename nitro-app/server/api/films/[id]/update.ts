@@ -17,7 +17,7 @@ export default defineEventHandler(async (event) => {
 
     try {
         // Exécuter la requête SQL de mise à jour
-        const result = await db.sql`
+        await db.sql`
             UPDATE films SET
                 titre = ${body.titre},
                 realisateur = ${body.realisateur},
@@ -32,7 +32,6 @@ export default defineEventHandler(async (event) => {
         // Retourner le film modifié
         return {
             status: 'success',
-            data: result.rows[0]
         };
 
     } catch (error) {
