@@ -38,7 +38,7 @@ npm run dev
 ```
 
 ### 4️⃣ Installer `fnm` (Facultatif)
-Pour gérer la version de Node.js, vous pouvez installer `fnm` (si npm n'est pas reconnu en nom d'applet) :
+Pour gérer la version de Node.js, vous pouvez installer `fnm` (si npm n'est pas reconnu) :
 ```sh
 winget install Schniz.fnm
 fnm install 22
@@ -48,14 +48,14 @@ fnm install 22
 
 ## 📌 Endpoints disponibles
 
-| Méthode  | Endpoint                 | Description |
-|----------|--------------------------|-------------|
-| `GET`    | `/api/films`             | Récupère la liste des films |
+| Méthode  | Endpoint                 | Description                               |
+|----------|--------------------------|-------------------------------------------|
+| `GET`    | `/api/films`             | Récupère la liste des films               |
 | `GET`    | `/api/films/[id]`        | Récupère les détails d’un film par son ID |
-| `GET`    | `/api/films/[id]/seance` | Récupère les séances d’un film |
-| `POST`   | `/api/films/add`         | Ajoute un nouveau film |
-| `DELETE` | `/api/films/[id]/delete` | Supprime un film |
-| `PUT`    | `/api/films/[id]/update` | Supprime un film |
+| `GET`    | `/api/films/[id]/seance` | Récupère les séances d’un film            |
+| `POST`   | `/api/films/add`         | Ajoute un nouveau film                    |
+| `DELETE` | `/api/films/[id]/delete` | Supprime un film                          |
+| `PUT`    | `/api/films/[id]/update` | modifie un film entièrement               |
 
 ---
 
