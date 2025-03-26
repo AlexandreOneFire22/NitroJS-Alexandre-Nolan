@@ -48,14 +48,14 @@ fnm install 22
 
 ## 📌 Endpoints disponibles
 
-| Méthode  | Endpoint                   | Description |
-|----------|----------------------------|-------------|
-| `GET`    | `/api/films`               | Récupère la liste des films |
-| `GET`    | `/api/films/[id]`          | Récupère les détails d’un film par son ID |
-| `GET`    | `/api/films/[id]/seance`   | Récupère les séances d’un film |
-| `POST`   | `/api/films/add`           | Ajoute un nouveau film |
-| `DELETE` | `/api/films/[id]/delete`   | Supprime un film |
-| `PUT`    | `/api/films/[id]/modifier` | Supprime un film |
+| Méthode  | Endpoint                 | Description |
+|----------|--------------------------|-------------|
+| `GET`    | `/api/films`             | Récupère la liste des films |
+| `GET`    | `/api/films/[id]`        | Récupère les détails d’un film par son ID |
+| `GET`    | `/api/films/[id]/seance` | Récupère les séances d’un film |
+| `POST`   | `/api/films/add`         | Ajoute un nouveau film |
+| `DELETE` | `/api/films/[id]/delete` | Supprime un film |
+| `PUT`    | `/api/films/[id]/update` | Supprime un film |
 
 ---
 

@@ -26,16 +26,8 @@ export default defineEventHandler(async (event) => {
                 affiche = ${body.affiche},
                 genre_id = ${body.genre_id},
                 description = ${body.description}
-            WHERE id = ${id}
-            RETURNING *`;
+            WHERE id = ${id}`;
 
-        // Vérifier si un film a été modifié
-        if (result.rows.length === 0) {
-            throw createError({
-                statusCode: 404,
-                statusMessage: 'Film non trouvé'
-            });
-        }
 
         // Retourner le film modifié
         return {
